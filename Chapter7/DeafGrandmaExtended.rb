@@ -2,12 +2,8 @@ counter = 0
 while true
   answer = gets.chomp
     if answer == answer.upcase
-          if answer == 'BYE'
-              counter += 1
-              if counter == 3
-                break
-              end
-
+          if answer == 'BYE BYE BYE'
+              break
           else
               num = rand(21) + 1930
               puts "NO, NOT SINCE " + num.to_s + "!"
