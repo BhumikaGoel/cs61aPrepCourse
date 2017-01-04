@@ -11,3 +11,5 @@ def ask question
     end
   end
 end
+result = ask 'Do you like tacos?'
+puts result
