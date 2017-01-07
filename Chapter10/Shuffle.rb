@@ -1,14 +1,18 @@
-def shuffle unsorted_array
-  #len = unsorted_array.length
-  sorted_array = []
-  while unsorted_array.length > 0
-    idx = rand(unsorted_array.length)
-    sorted_array.push unsorted_array[idx]
-    unsorted_array.delete_at(idx)
-  end
-return sorted_array
-
+def shuffle array
+  maincode array, []
 end
 
-result = shuffle ['apple','cat','banana','man','man']
+def maincode array, shuffled_array
+  if array.length == 0
+    return shuffled_array
+  end
+
+  idx = rand(array.length)
+  shuffled_array.push array[idx]
+  array.delete_at(idx)
+
+  maincode array, shuffled_array
+end
+
+result = shuffle ['apple','cat','banana','man','man', 'ruby','lion']
 puts result
