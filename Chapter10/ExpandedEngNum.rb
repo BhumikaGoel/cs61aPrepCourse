@@ -13,7 +13,7 @@ def english_number number
   ones_place = ['one', 'two', 'three','four','five','six','seven','eight','nine']
   tens_place = ['ten', 'twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety']
   teenagers  = ['eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen', 'eighteen', 'nineteen']
-  further = [['hundred and', 2],['thousand and',3],['million and',6],]
+  further = [['hundred', 2],['thousand',3],['million',6],]
 
   left = number
 
