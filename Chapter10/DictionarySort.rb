@@ -7,9 +7,11 @@ def maincode unsort_array, sort_array
     return sort_array
   end
 
-    temp = unsort_array[unsort_array.length-1]
-    unsort_array.delete(temp)
+    #temp = unsort_array[unsort_array.length-1]
+    #unsort_array.delete(temp)
+    #the above will delete any duplicated elements!
 
+    temp = unsort_array.pop
     #all but last of the unsorted array needed for recursive case
     temparray = []
 
