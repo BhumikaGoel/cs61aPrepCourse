@@ -77,7 +77,7 @@ while counter>0
 
   if counter == 2
         eng_num = english_number(counter)
-        puts eng_num + " bottles of beer on the wall, " + eng_num + " bottles of beer."
+        puts eng_num.capitalize + " bottles of beer on the wall, " + eng_num + " bottles of beer."
         counter-=1
         eng_num = english_number(counter)
         puts "Take one down and pass it around, " + eng_num + " bottle of beer on the wall."
